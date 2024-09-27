@@ -9,7 +9,7 @@ st.title('Titanic app by Gaojiong Wu')
 
 # read csv and show the dataframe
 df = pd.read_csv('train.csv')
-print(df)
+st.dataframe(df)
 # create a figure with three subplots, size should be (15, 5)
 # show the box plot for ticket price with different classes
 # you need to set the x labels and y labels
@@ -28,3 +28,4 @@ axes[1].set_xticklabels(['Fare'])
 axes[2].boxplot(df[df['Pclass'] == 3]['Fare'])
 axes[2].set_xlabel('Pclass = 3')
 axes[2].set_xticklabels(['Fare'])
+st.pyplot(plt)
