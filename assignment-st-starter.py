@@ -16,6 +16,7 @@ st.dataframe(df)
 # a sample diagram is shown below
 
 fig, axes = plt.subplots(1, 3, figsize=(15, 5))
+plt.style.use('seaborn-v0_8')
 axes[0].boxplot(df[df['Pclass'] == 1]['Fare'])
 axes[0].set_xlabel('Pclass = 1')
 axes[0].set_ylabel('Fare')
