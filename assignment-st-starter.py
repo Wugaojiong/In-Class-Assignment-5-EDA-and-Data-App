@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # show the title
-st.title('Titanic aPP by Gaojiong Wu')
+st.title('Titanic app by Gaojiong Wu')
 
 # read csv and show the dataframe
 df = pd.read_csv('train.csv')
